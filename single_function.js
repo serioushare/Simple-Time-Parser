@@ -37,7 +37,7 @@ function parseTime(timeString, scaleList = [1, 60, 60, 24]){
     // Round stringTime, removing the milliseconds, and then split it on ':'.
     var arrayTime = stringTime.substr(0, index).split(":");
     // Set the time segment scaler to 1.
-    var scaler = 1;
+    var timeScaler = 1;
 
     // While we have time segments,
     while(arrayTime.length){
